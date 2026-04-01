@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.21)  21 MAR 2026 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.21)  1 APR 2026 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -814,7 +814,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2]
 <Membership-inference-attack-in-the-black-box-setting-The-attacker-queries-the-
-target.png, id=161, 718.685pt x 311.1625pt>
+target.png, id=173, 718.685pt x 311.1625pt>
 File: Membership-inference-attack-in-the-black-box-setting-The-attacker-queries
 -the-target.png Graphic file (type png)
 <use Membership-inference-attack-in-the-black-box-setting-The-attacker-queries-
@@ -823,7 +823,7 @@ Package pdftex.def Info: Membership-inference-attack-in-the-black-box-setting-T
 he-attacker-queries-the-target.png  used on input line 124.
 (pdftex.def)             Requested size: 252.0pt x 109.10316pt.
 <The-procedure-of-our-membership-inference-attack-on-federated-learning-TH-c-ar
-e-the-set.png, id=165, 853.1875pt x 441.65pt>
+e-the-set.png, id=177, 853.1875pt x 441.65pt>
 File: The-procedure-of-our-membership-inference-attack-on-federated-learning-TH
 -c-are-the-set.png Graphic file (type png)
 <use The-procedure-of-our-membership-inference-attack-on-federated-learning-TH-
@@ -831,7 +831,7 @@ c-are-the-set.png>
 Package pdftex.def Info: The-procedure-of-our-membership-inference-attack-on-fe
 derated-learning-TH-c-are-the-set.png  used on input line 134.
 (pdftex.def)             Requested size: 252.0pt x 130.44734pt.
-<DP-machine-learning-1.png, id=169, 392.46625pt x 215.80624pt>
+<DP-machine-learning-1.png, id=181, 392.46625pt x 215.80624pt>
 File: DP-machine-learning-1.png Graphic file (type png)
 <use DP-machine-learning-1.png>
 Package pdftex.def Info: DP-machine-learning-1.png  used on input line 146.
@@ -847,28 +847,25 @@ Underfull \hbox (badness 1867) in paragraph at lines 268--269
 
  []
 
+[4 <./DP-machine-learning-1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 6708) has occurred while \output is active []
-
- [4 <./DP-machine-learning-1.png>]
-Underfull \vbox (badness 1132) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 317--318
+ [5]
+Underfull \hbox (badness 1490) in paragraph at lines 327--328
 []\T1/ptm/m/n/10 The con-nec-tion to over-fit-ting is prac-ti-cally im-por-tant
 .
  []
 
 
-Underfull \vbox (badness 4899) has occurred while \output is active []
+Underfull \vbox (badness 3000) has occurred while \output is active []
 
- [5]
-Underfull \hbox (badness 2744) in paragraph at lines 383--384
+ [6]
+Underfull \hbox (badness 2744) in paragraph at lines 401--402
 []\T1/ptm/m/n/10 Grover's al-go-rithm re-duces sym-met-ric key search to
  []
 
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
 []\T1/ptm/m/n/10 NIST, ``FIPS 203: Module-Lattice-Based Key-
  []
 
@@ -883,15 +880,15 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8] (./Main_Paper.aux)
+[9] (./Main_Paper.aux)
 Package rerunfilecheck Info: File `Main_Paper.out' has not changed.
-(rerunfilecheck)             Checksum: 5065143897E6C851A8B4FA50CC7DBCC7;5711.
+(rerunfilecheck)             Checksum: DADC365331E546D5B803807D445BEB4D;6336.
  ) 
 Here is how much of TeX's memory you used:
- 23066 strings out of 475075
- 433230 string characters out of 5783001
- 785897 words of memory out of 5000000
- 43991 multiletter control sequences out of 15000+600000
+ 23073 strings out of 475075
+ 433336 string characters out of 5783001
+ 786830 words of memory out of 5000000
+ 43994 multiletter control sequences out of 15000+600000
  586395 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,80p,1855b,1330s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -907,10 +904,10 @@ mr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c
 s/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/
 utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/te
 xlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Main_Paper.pdf (8 pages, 337438 bytes).
+Output written on Main_Paper.pdf (9 pages, 341829 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 

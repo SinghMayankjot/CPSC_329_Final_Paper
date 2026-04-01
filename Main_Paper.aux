@@ -54,36 +54,40 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Secure Architecture Design}{4}{subsection.3.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Layered Zero Trust defense architecture for healthcare AI. Each layer targets a distinct part of the MIA attack surface: data-layer controls reduce raw exposure; training-layer DP limits leakage at the source; registry controls prevent white-box escalation; API and output controls raise the cost of black-box attacks; governance provides detection and accountability.}}{4}{figure.5}\protected@file@percent }
 \newlabel{fig:arch}{{5}{4}{Layered Zero Trust defense architecture for healthcare AI. Each layer targets a distinct part of the MIA attack surface: data-layer controls reduce raw exposure; training-layer DP limits leakage at the source; registry controls prevent white-box escalation; API and output controls raise the cost of black-box attacks; governance provides detection and accountability}{figure.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Results and Discussion}{4}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Patient Privacy Risk Analysis}{4}{subsection.4.1}\protected@file@percent }
-\citation{yeom2018}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-F}1}FATE Network Integration}{4}{subsubsection.3.6.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Formal attack tree for MIA against a healthcare AI system (horizontal layout, root at left). The root decomposes via OR into three primary paths: black-box API inference, white-box weight access, and federated gradient-level inference. AND-nodes (double border) require all children; OR-nodes require one. Black-box attacks are low-to-medium cost; white-box attacks require privilege escalation (H) or insider sharing (L); federated attacks bypass all API-level controls entirely.}}{5}{figure.4}\protected@file@percent }
 \newlabel{fig:attacktree}{{4}{5}{Formal attack tree for MIA against a healthcare AI system (horizontal layout, root at left). The root decomposes via OR into three primary paths: black-box API inference, white-box weight access, and federated gradient-level inference. AND-nodes (double border) require all children; OR-nodes require one. Black-box attacks are low-to-medium cost; white-box attacks require privilege escalation (H) or insider sharing (L); federated attacks bypass all API-level controls entirely}{figure.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Leakage-to-harm mapping for healthcare MIA by cohort type}}{5}{table.3}\protected@file@percent }
-\newlabel{tab:leakage}{{III}{5}{Leakage-to-harm mapping for healthcare MIA by cohort type}{table.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Risk Matrix and Deployment Scenario Comparison}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Results and Discussion}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Real-World Attack Scenario}{5}{subsection.4.1}\protected@file@percent }
+\citation{yeom2018}
+\citation{shokri2017,carlini2022}
 \citation{hipaa}
-\citation{gdpr}
-\citation{pipeda}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Patient Privacy Risk Analysis}{6}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Leakage-to-harm mapping for healthcare MIA by cohort type}}{6}{table.3}\protected@file@percent }
+\newlabel{tab:leakage}{{III}{6}{Leakage-to-harm mapping for healthcare MIA by cohort type}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Risk Matrix and Deployment Scenario Comparison}{6}{subsection.4.3}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Risk matrix: MIA likelihood and impact by deployment scenario}}{6}{table.4}\protected@file@percent }
 \newlabel{tab:risk}{{IV}{6}{Risk matrix: MIA likelihood and impact by deployment scenario}{table.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Defense-to-Threat Mapping}{6}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Defense-to-Threat Mapping}{6}{subsection.4.4}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Defense-to-threat mapping with clinical deployment trade-offs}}{6}{table.5}\protected@file@percent }
 \newlabel{tab:defenses}{{V}{6}{Defense-to-threat mapping with clinical deployment trade-offs}{table.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Privacy and Regulatory Compliance}{6}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-D}1}HIPAA}{6}{subsubsection.4.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-D}2}GDPR}{6}{subsubsection.4.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-D}3}PIPEDA}{6}{subsubsection.4.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {V}Cryptographic Analysis and Quantum Risk}{6}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Classical Vulnerabilities and the Harvest-Now-Decrypt-Later Threat}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Privacy and Regulatory Compliance}{6}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-E}1}HIPAA}{6}{subsubsection.4.5.1}\protected@file@percent }
+\citation{gdpr}
+\citation{pipeda}
 \citation{fips203}
 \citation{fips204}
 \citation{fips205}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-E}2}GDPR}{7}{subsubsection.4.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-E}3}PIPEDA}{7}{subsubsection.4.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-F}}Feasibility and Trade-Off Analysis}{7}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Cryptographic Analysis and Quantum Risk}{7}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Classical Vulnerabilities and the Harvest-Now-Decrypt-Later Threat}{7}{subsection.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Post-Quantum Transition Planning}{7}{subsection.5.2}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Post-quantum cryptographic transition for healthcare AI systems}}{7}{table.6}\protected@file@percent }
 \newlabel{tab:pqc}{{VI}{7}{Post-quantum cryptographic transition for healthcare AI systems}{table.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Ethical and Governance Considerations}{7}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion and Future Work}{7}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Ethical and Governance Considerations}{8}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion and Future Work}{8}{section.7}\protected@file@percent }
 \bibcite{shokri2017}{{1}{}{{}}{{}}}
 \bibcite{yeom2018}{{2}{}{{}}{{}}}
 \bibcite{nasr2019}{{3}{}{{}}{{}}}
@@ -99,4 +103,4 @@
 \bibcite{bonawitz2017}{{13}{}{{}}{{}}}
 \bibcite{img_dp}{{14}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\gdef \@abspage@last{8}
+\gdef \@abspage@last{9}
