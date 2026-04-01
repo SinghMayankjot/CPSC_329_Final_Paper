@@ -290,7 +290,10 @@
 	Each layer targets a distinct adversary type. The training layer controls (DP-SGD, SecAgg) address the federated participant and white-box adversaries by limiting the information encoded in model weights and gradients. The output and API controls address the black-box and gray-box adversaries by restricting and budgeting the signal available through API queries. The registry and governance layers prevent escalation and provide the audit trail required for regulatory compliance.
 	
 	\section{Results and Discussion}
-	
+	\subsection{Real-World Attack Scenario}
+
+Consider a hospital deploying an AI model trained on patients enrolled in an HIV treatment program. An attacker with access to the inference API submits patient data obtained from external sources such as insurance records or leaked medical summaries. By analyzing the model's output probabilities and applying a membership inference classifier, the attacker can estimate whether a specific individual was part of the training dataset.
+This directly reveals the individual's likely HIV-positive status without exposing any raw medical records. The attack operates through black-box access and exploits confidence differences caused by overfitting. In practice, this can produce insurance discrimination, employment risk, and social stigma without triggering a traditional breach notification process.
 	\subsection{Patient Privacy Risk Analysis}
 	The key question is: what exactly is leaked when membership is successfully inferred, and what harms follow? The answer depends on the training cohort. Table~\ref{tab:leakage} maps cohort types to specific leaked facts and potential harms.
 	
@@ -315,6 +318,8 @@
 	This table makes clear that MIA harm is not generic: it maps directly to the specific clinical meaning of cohort membership. A binary membership answer --- yes or no --- is sufficient to trigger concrete legal, financial, and social harm for patients in these cohorts. Unlike a data breach, this harm can materialize silently, with no breach notification triggered and no audit trail unless tamper-evident API logging is in place.
 	
 	The connection to overfitting is practically important. Healthcare datasets are frequently small relative to task complexity: a model trained on 500 rare disease cases may have a training-test AUC gap of 10 points or more, which Yeom et al.\ \cite{yeom2018} show directly bounds MIA advantage. Organizations should treat large generalization gaps as privacy warnings.
+	
+Recent studies show that membership inference attacks can perform substantially above random guessing. Shokri et al.\ reported strong attack performance against machine learning models, and later work showed that leakage remains significant even in more modern settings \cite{shokri2017,carlini2022}. In healthcare environments, where datasets are often smaller and more specialized, even moderate attack success is operationally serious because each successful inference may reveal highly sensitive clinical information.
 	
 	\subsection{Risk Matrix and Deployment Scenario Comparison}
 	Table~\ref{tab:risk} classifies risk across five deployment scenarios. Figure~\ref{fig:arch} shows which defense layers are most relevant in each.
@@ -374,7 +379,13 @@
 	
 	\subsubsection{PIPEDA}
 	PIPEDA Principle 7 requires safeguards appropriate to the sensitivity of the information \cite{pipeda}. For medical AI, this means that as MIA techniques mature, organizations face an ongoing obligation to update their technical defenses, not merely those that existed at deployment time. The emergence of gradient inversion attacks in federated settings, for example, constitutes a new risk that existing safeguards may not address. Canadian healthcare AI operators should treat MIA as a known and material privacy risk and document it explicitly in privacy impact assessments.
-	
+	\subsection{Feasibility and Trade-Off Analysis}
+
+While defenses such as differential privacy, output truncation, and secure aggregation reduce membership inference risk, they also introduce practical trade-offs. Differential privacy can reduce model accuracy, which may negatively affect clinical decision-making in high-stakes settings such as sepsis prediction or cancer screening. Output truncation reduces the confidence information available to attackers, but it may also reduce interpretability for clinicians who rely on probability scores as part of decision support.
+
+Scalability is also a concern. Deploying layered defenses across large hospital networks requires coordination between institutions, standardized technical controls, and consistent regulatory compliance practices. Federated learning defenses such as secure aggregation and local differential privacy also increase computational overhead and implementation complexity.
+
+From a long-term sustainability perspective, the most realistic approach is not a single defense but a layered one. System-level controls such as rate limiting, RBAC, and tamper-evident logging are easier to sustain operationally, while privacy-preserving training methods require ongoing calibration as models, data volumes, and clinical requirements evolve.
 	\section{Cryptographic Analysis and Quantum Risk}
 	
 	\subsection{Classical Vulnerabilities and the Harvest-Now-Decrypt-Later Threat}
